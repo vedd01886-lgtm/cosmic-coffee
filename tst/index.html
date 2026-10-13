@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cosmic Coffee — кофейня космической тематики">
+  <title>Cosmic Coffee — Кофе из другой галактики</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= ШАПКА ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">☕ Cosmic<span>Coffee</span></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">О нас</a></li>
+          <li><a href="#menu" class="nav__link">Меню</a></li>
+          <li><a href="#subscribe" class="nav__link">Подписка</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title">Кофе из другой <span>галактики</span></h1>
+        <p class="hero__subtitle">
+          Обжарка в невесомости, вкус — в космической тишине.
+          Попробуй первый в мире эспрессо, сваренный под звёздами.
+        </p>
+        <a href="#menu" class="btn btn--primary">Посмотреть меню</a>
+      </div>
+      <div class="hero__image">
+        <div class="hero__circle"></div>
+        <div class="hero__cup">☕</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= О НАС ================= -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section__title">Почему Cosmic Coffee?</h2>
+      <div class="about__grid">
+        <article class="card">
+          <div class="card__icon">🚀</div>
+          <h3>Быстрая доставка</h3>
+          <p>Доставим за 15 минут — быстрее, чем свет долетает от Солнца до Земли.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🌌</div>
+          <h3>Уникальные сорта</h3>
+          <p>Зёрна собраны в высокогорьях Эфиопии и обжарены по космической технологии.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">✨</div>
+          <h3>Атмосфера</h3>
+          <p>Проекции звёздного неба, ambient-музыка и уютные места для работы.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= МЕНЮ ================= -->
+  <section id="menu" class="section menu">
+    <div class="container">
+      <h2 class="section__title">Наше меню</h2>
+      <div class="menu__grid">
+        <article class="menu-item">
+          <div class="menu-item__emoji">🌑</div>
+          <h3 class="menu-item__name">Чёрная дыра</h3>
+          <p class="menu-item__desc">Двойной эспрессо с активированным углём</p>
+          <span class="menu-item__price">250 ₽</span>
+        </article>
+        <article class="menu-item">
+          <div class="menu-item__emoji">🌠</div>
+          <h3 class="menu-item__name">Метеорит</h3>
+          <p class="menu-item__desc">Капучино с карамелью и корицей</p>
+          <span class="menu-item__price">280 ₽</span>
+        </article>
+        <article class="menu-item">
+          <div class="menu-item__emoji">🪐</div>
+          <h3 class="menu-item__name">Сатурн</h3>
+          <p class="menu-item__desc">Латте с кокосом и ванилью</p>
+          <span class="menu-item__price">300 ₽</span>
+        </article>
+        <article class="menu-item">
+          <div class="menu-item__emoji">☄️</div>
+          <h3 class="menu-item__name">Комета</h3>
+          <p class="menu-item__desc">Раф с малиной и белым шоколадом</p>
+          <span class="menu-item__price">320 ₽</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПОДПИСКА ================= -->
+  <section id="subscribe" class="section subscribe">
+    <div class="container subscribe__inner">
+      <h2 class="section__title">Подпишись на новости</h2>
+      <p class="subscribe__text">
+        Узнавай первым о новых сортах, акциях и космических вечеринках.
+      </p>
+      <form class="form" id="subscribeForm" novalidate>
+        <div class="form__group">
+          <label for="name" class="form__label">Имя</label>
+          <input type="text" id="name" name="name" class="form__input" placeholder="Введите ваше имя" required minlength="2">
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Email</label>
+          <input type="email" id="email" name="email" class="form__input" placeholder="example@cosmic.ru" required>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Подписаться</button>
+        <p class="form__message" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= ПОДВАЛ ================= -->
+  <footer id="contacts" class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <a href="#" class="logo">☕ Cosmic<span>Coffee</span></a>
+        <p class="footer__text">Кофейня космической тематики в центре города.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <p>г. Москва, ул. Космическая, 12</p>
+        <p>+7 (999) 123-45-67</p>
+        <p>hello@cosmic-coffee.ru</p>
+      </div>
+      <div class="footer__col">
+        <h4>Мы в соцсетях</h4>
+        <p>Telegram · VK · Instagram</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Cosmic Coffee. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Простая валидация формы
+    const form = document.getElementById('subscribeForm');
+    const message = document.getElementById('formMessage');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      if (name.length < 2) {
+        message.textContent = 'Введите имя (минимум 2 символа)';
+        message.className = 'form__message form__message--error';
+        return;
+      }
+      if (!email.includes('@')) {
+        message.textContent = 'Введите корректный email';
+        message.className = 'form__message form__message--error';
+        return;
+      }
+      message.textContent = 'Спасибо за подписку! 🚀';
+      message.className = 'form__message form__message--success';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
